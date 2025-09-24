@@ -1,0 +1,90 @@
+:root {
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --accent: #2b6cb0;
+  --muted: #718096;
+  --error: #e53e3e;
+}
+
+html,body,#root { height: 100%; margin: 0; font-family: Inter, system-ui, Arial, sans-serif; background: var(--bg); }
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 8px;
+  box-shadow: 0 6px 30px rgba(8,12,20,0.06);
+  max-width: 420px;
+  width: 100%;
+  padding: 28px;
+}
+
+.login-form h2 { margin-top: 0; margin-bottom: 10px; color: #111827; }
+.login-form label { display:block; margin-top:12px; font-size: 14px; color: var(--muted); }
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="email"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+.password-wrapper { position: relative; display: flex; align-items: center; }
+.toggle-pass {
+  border: none; background: transparent; cursor: pointer; position: absolute; right: 8px; top: 8px; font-size: 13px; color: var(--muted);
+}
+
+.form-row { display:flex; justify-content: space-between; align-items: center; margin-top:10px; }
+.remember { display:flex; align-items:center; gap:8px; color: var(--muted); }
+.btn {
+  width: 100%;
+  margin-top: 18px;
+  padding: 10px 12px;
+  background: var(--accent);
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn:disabled { opacity: 0.7; cursor: not-allowed; }
+
+.field-error { color: var(--error); font-size: 13px; margin-top:6px; }
+.error-message { background: #fff5f5; color: var(--error); padding:10px; border-radius:6px; margin-bottom:12px; border: 1px solid rgba(229,62,62,0.15); }
+
+.spinner { display: inline-block; vertical-align: middle; }
+.lds-dual-ring {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin: 2px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-color: #ffffff transparent #ffffff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+  background: var(--accent);
+}
+@keyframes lds-dual-ring {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .card { padding: 18px; }
+}

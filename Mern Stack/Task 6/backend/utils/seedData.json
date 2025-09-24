@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "name": "Wireless Headphones Pro",
+      "description": "High-fidelity Bluetooth headphones with active noise cancellation.",
+      "price": 129.99,
+      "originalPrice": 199.99,
+      "category": "Electronics",
+      "subcategory": "Audio",
+      "images": ["https://example.com/img/headphones1.jpg"],
+      "stock": 50,
+      "rating": { "average": 4.5, "count": 124 },
+      "features": ["Bluetooth 5.2", "ANC", "20h battery"],
+      "specifications": { "color": "black", "weight": "250g" },
+      "isActive": true
+    },
+    {
+      "name": "Classic Leather Wallet",
+      "description": "Handmade leather wallet with multiple card slots.",
+      "price": 39.99,
+      "category": "Fashion",
+      "subcategory": "Accessories",
+      "images": ["https://example.com/img/wallet.jpg"],
+      "stock": 200,
+      "rating": { "average": 4.2, "count": 40 },
+      "features": ["Genuine leather", "RFID protection"],
+      "specifications": { "material": "leather", "size": "10x8 cm" },
+      "isActive": true
+    },
+    {
+      "name": "Standing Desk Converter",
+      "description": "Adjustable height desk converter for ergonomic working.",
+      "price": 149.99,
+      "category": "Home",
+      "subcategory": "Office",
+      "images": ["https://example.com/img/desk.jpg"],
+      "stock": 15,
+      "rating": { "average": 4.6, "count": 78 },
+      "features": ["Adjustable", "Sturdy"],
+      "specifications": { "maxHeight": "40cm", "material": "steel" },
+      "isActive": true
+    }
+  ]
+}
